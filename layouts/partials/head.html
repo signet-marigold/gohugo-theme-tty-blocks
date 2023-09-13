@@ -1,5 +1,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ $sass := resources.Get "sass/main.scss" }}
+{{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
