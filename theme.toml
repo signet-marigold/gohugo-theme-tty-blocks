@@ -1,31 +1,18 @@
-name = 'Theme name'
+name = 'TTY Blocks'
 license = 'MIT'
 licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
-
-# The home page of the theme, where the source can be found
-homepage = 'https://github.com/owner/repo'
+description = 'curses style shiiii'
+homepage = 'https://github.com/signet-marigold/gohugo-theme-tty-blocks'
 
 # If you have a running demo of the theme
 demosite = 'https://owner.github.io/repo'
 
 # Taxonomy terms
-tags = ['blog', 'company']
-features = ['some', 'awesome', 'features']
-
-# If the theme has multiple authors
-authors = [
-  {name = 'Name of author', homepage = 'Website of author'},
-  {name = 'Name of author', homepage = 'Website of author'}
-]
+tags = ['blog']
+features = ['']
 
 # If the theme has a single author
 [author]
-  name = 'Your name'
-  homepage = 'Your website'
+  name = 'Alexander Hack'
+  homepage = 'https://anhack.xyz'
 
-# If porting an existing theme
-[original]
-  author = 'Name of original author'
-  homepage = 'Website of original author'
-  repo = 'https://github.com/owner/repo'
